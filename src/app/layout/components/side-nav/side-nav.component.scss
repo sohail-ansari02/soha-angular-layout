@@ -1,0 +1,33 @@
+:host > * {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.side-nav {
+  padding: 38px 35px 48px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &__logo {
+    object-fit: contain;
+    width: 145;
+    height: auto;
+    aspect-ratio: 145/40;
+    margin-block-end: 48px;
+  }
+  &__navigation {
+    flex: 1 0 auto;
+    overflow-y: auto;
+    margin-block-end: 30px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__link {
+    width: 100%;
+  }
+}
