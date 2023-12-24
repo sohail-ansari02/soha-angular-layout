@@ -1,0 +1,42 @@
+.layout {
+  color: inherit;
+  background: inherit;
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  &__side-nav,
+  &__container {
+    height: 100%;
+  }
+
+  &__top-bar {
+    z-index: 999;
+    position: sticky;
+    top: 0;
+  }
+  &__footer {
+    z-index: 999;
+    position: sticky;
+    bottom: 0;
+  }
+
+  &__side-nav {
+    overflow: auto;
+    height: 100vh;
+  }
+  &__container {
+    overflow: auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  &__content {
+    padding: 20px 40px;
+  }
+}
