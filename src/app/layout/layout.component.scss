@@ -37,14 +37,14 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
   }
-  &__content {
+  &__content-wrapper {
     overflow: auto;
     padding: 20px 40px;
 
-    & > * {
-      border: 1px solid $borderColor;
-      border-radius: 14px;
-      padding: 14px;
-    }
+  }
+  &__content {
+    border: 1px solid $borderColor;
+    border-radius: 14px;
+    padding: 14px;
   }
 }
